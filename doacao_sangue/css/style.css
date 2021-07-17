@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    border: 2px solid black;
+    margin: 15vh auto;
+    background-color: darkgray;
+    height: 616px;
+    width: 996px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "header header header header"
+    "botoes main videos videos"
+    ;
+}
+
+.header {
+    background-color: #b91c11;
+    grid-area: header;
+    color: white;
+}
+
+.header h1 {
+    display: block;
+    padding: 12px;
+    text-align: center;
+}
+
+.main {
+    background-color: white;
+    grid-area: main;
+    border-right: 2px solid black;
+}
+
+.main h1{
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.main p {
+    height: 90%;
+    text-align: center;
+    text-align: justify;
+    padding: 15px;
+}
+
+.botoes {
+    position: relative;
+    background-color: white;
+    grid-area: botoes;
+    border-right: 2px solid black;
+}
+
+.botoes ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.botoes ul a, li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+.botoes li {
+    position: relative;
+    padding: 5px;
+    left: 20%;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #b91c11;
+}
+
+.botoes a:hover {
+    color: black;
+}
+
+.videos {
+    position: relative;
+    background-color: white;
+    grid-area: videos;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.videos h1 {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-25%);
+}
+
+.videos h2 {
+    position: absolute;
+}
+
+.videos video {
+    width: 260px;
+    border: 2px solid black;
+}
