@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Speed test</title>
+</head>
+<body class="bg-dark text-white">
+    
+    <header class="bg-secondary text-center p-3 mb-5">
+        <h1>WordBeater</h1>
+    </header>
+
+    <div class="contanier text-center">
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="lead">
+                    Digite a palavra antes dos <span class="text-success" id="seconds">5</span>
+                segundos:</p>
+                <h2 class="display-2 mb-5" id="current-word">Bem-vindo!</h2>
+                <input type="text" class="form-control form-control-lg" placeholder="Comece a digitar..." id="word-input" autofocus>
+                <h4 class="mt-3" id="message"></h4>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h3>
+                            Tempo:
+                            <span id="time">0</span>
+                        </h3>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Pontuação:
+                            <span id="score">0</span>
+                        </h3>
+                    </div>
+                    <br><br>
+
+                    <div class="col">
+                        <h3>
+                            High Score:
+                            <span id="highscore">0</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>Instruções</h5>
+                            <p>Digite a palavra requisitada antes que acabe o tempo.
+                                Para jogar novamente digite a palavra requisitada.
+                                A sua pontuação sera resetada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/script.js"></script>
+
+</body>
+</html>
